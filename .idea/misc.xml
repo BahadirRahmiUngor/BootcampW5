@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/BCW5/app/src/main/res/layout/activity_main.xml" value="0.2453125" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/BCW5/app/src/main/res/layout/column_genre.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/BCW5/app/src/main/res/layout/fragment_movie_detail.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/BCW5/app/src/main/res/layout/fragment_movie_list.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/BCW5/app/src/main/res/layout/row_film.xml" value="0.16979166666666667" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/drawable/ic_back_button_icon.xml" value="0.2890625" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/drawable/ic_heart_filled_icon.xml" value="0.2890625" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/drawable/ic_heart_hollow_icon.xml" value="0.2890625" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/drawable/ic_image_background.xml" value="0.2890625" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2890625" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/drawable/ic_rating_star_small.xml" value="0.2890625" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/drawable/rounded_movie_category_shape.xml" value="0.2890625" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/layout/activity_main.xml" value="0.13272543059777103" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/layout/column_genre.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/layout/content_main.xml" value="0.13272543059777103" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/layout/fragment_first.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/layout/fragment_home.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/layout/fragment_movie_detail.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/layout/fragment_movie_details.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/layout/fragment_movie_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/layout/fragment_second.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/layout/row_film.xml" value="0.33" />
+        <entry key="..\:/Users/Bahadir/AndroidStudioProjects/BootcampHepsi/5/hafta-5.2-master/app/src/main/res/menu/menu_main.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

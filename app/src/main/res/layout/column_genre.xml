@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--
+    <data>
+
+        <variable
+            name="genre"
+            type="com.example.hw5.ui.filmlist.model.Genre" />
+    </data>
+-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="1dp"
+            app:cardCornerRadius="100dp"
+            app:contentPaddingBottom="9dp"
+            app:contentPaddingLeft="20dp"
+            app:contentPaddingRight="20dp"
+            app:contentPaddingTop="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/pale_gray"
+            app:strokeWidth="1.5dp"
+            tools:layout_height="36dp"
+            tools:layout_width="86dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textColor="@color/movie_genre"
+                android:textSize="@dimen/details_genresize"
+                android:fontFamily="@font/proxima_nova_500"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:text="Deneme"
+                tools:text="Action" />
+            <!--          android:text="@{genre.name}" -->
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

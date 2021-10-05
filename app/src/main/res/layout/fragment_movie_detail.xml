@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--
+    <data>
+
+        <variable
+            name="detailsResponse"
+            type="com.example.hw5.ui.filmlist.model.FilmDetailsViewStateModel" />
+
+        <variable
+            name="favoritesResponse"
+            type="com.example.hw5.ui.filmlist.model.FavoriteFilmsViewStateModel" />
+    </data>
+    -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="deneme.filmlist.FilmDetailsFragment">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/detailsImageHolder"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="-50dp"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/detailMovieImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:scaleType="centerCrop"
+                 />
+            <!-- app:image="@{detailsResponse.posterPath}"   -->
+
+            <ImageButton
+                android:id="@+id/backToMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+
+                android:layout_marginTop="78dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/ic_back_button_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/detailMovieImage" />
+            <!-- android:onClick="@{()-> clickHandler.onBackButtonPressed()}"   -->
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginEnd="-30dp"
+            android:layout_marginStart="30dp"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/detailsImageHolder"
+            app:layout_constraintTop_toBottomOf="@id/detailsImageHolder">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/detailsAverageRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_rating_star_big"
+                    app:layout_constraintBottom_toBottomOf="@id/detailsRateThisIcon"
+                    app:layout_constraintEnd_toStartOf="@id/detailsRateThisIcon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/detailsRateThisIcon" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/detailsRateThisIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_rate_this"
+                    app:layout_constraintBottom_toBottomOf="@id/detailsMetaScore"
+                    app:layout_constraintEnd_toStartOf="@id/detailsMetaScore"
+                    app:layout_constraintStart_toEndOf="@id/detailsAverageRate"
+                    app:layout_constraintTop_toTopOf="@id/detailsMetaScore" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/detailsMetaScore"
+                    android:layout_width="28dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/metascore_green"
+                    app:cardCornerRadius="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/detailsRateThisIcon"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/metascore_textsize"
+                        android:fontFamily="@font/proxima_nova_500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="99" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/averageScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    app:layout_constraintEnd_toEndOf="@+id/detailsAverageRate"
+                    app:layout_constraintStart_toStartOf="@+id/detailsAverageRate"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsAverageRate"
+                    tools:text="8.2/10" />
+                <!--  android:text="@{String.valueOf(detailsResponse.averageScore)}"  -->
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/detailsRateThisText"
+                    android:textSize="@dimen/details_average_score"
+                    android:fontFamily="@font/proxima_nova_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/rate_this"
+                    app:layout_constraintEnd_toEndOf="@+id/detailsRateThisIcon"
+                    app:layout_constraintStart_toStartOf="@+id/detailsRateThisIcon"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsRateThisIcon" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/detailsMetaScoreText"
+                    android:textSize="@dimen/details_average_score"
+                    android:fontFamily="@font/proxima_nova_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/metascore"
+                    app:layout_constraintBottom_toBottomOf="@id/detailsRateThisText"
+                    app:layout_constraintEnd_toEndOf="@+id/detailsMetaScore"
+                    app:layout_constraintStart_toStartOf="@+id/detailsMetaScore"
+                    app:layout_constraintTop_toTopOf="@id/detailsRateThisText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:textSize="@dimen/details_total_vote"
+                    android:textColor="@color/pale_gray"
+                    android:fontFamily="@font/proxima_nova_400"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+
+                    app:layout_constraintEnd_toEndOf="@+id/averageScore"
+                    app:layout_constraintStart_toStartOf="@+id/averageScore"
+                    app:layout_constraintTop_toBottomOf="@id/averageScore"
+                    tools:text="150.2012" />
+                <!--  android:text="@{String.valueOf(detailsResponse.totalVoteCount)}"  -->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/detailsMovieTitle"
+            android:textColor="@color/movie_title"
+            android:fontFamily="@font/proxima_nova_600"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:maxLines="2"
+
+            android:textSize="@dimen/details_movie_title"
+            app:layout_constraintEnd_toStartOf="@+id/favIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            tools:text="Ford v Ferrari" />
+        <!--  android:text="@{detailsResponse.filmTitle}"  -->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/favIcon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+
+            app:cardCornerRadius="20dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/duration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/detailsMovieTitle" />
+        <!-- android:src="@{favoritesResponse.favoritedIds.contains(detailsResponse.id) ? @drawable/ic_fav_selected : @drawable/ic_fav_unselected}"   -->
+
+        <TextView
+            android:id="@+id/year"
+            android:textColor="@color/pale_gray"
+            android:textSize="@dimen/details_average_score"
+            android:fontFamily="@font/proxima_nova_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            app:layout_constraintStart_toStartOf="@id/detailsMovieTitle"
+            app:layout_constraintTop_toBottomOf="@+id/detailsMovieTitle"
+            tools:text="2019" />
+        <!--  android:text="@{detailsResponse.year}"  -->
+
+        <TextView
+            android:id="@+id/duration"
+            android:textColor="@color/pale_gray"
+            android:textSize="@dimen/details_average_score"
+            android:fontFamily="@font/proxima_nova_400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="8dp"
+
+            app:layout_constraintStart_toEndOf="@+id/year"
+            app:layout_constraintTop_toBottomOf="@+id/detailsMovieTitle"
+            tools:text="120" />
+        <!--   android:text="@{detailsResponse.duration}"  -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/genreRV"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="@id/favIcon"
+            app:layout_constraintStart_toStartOf="@id/detailsMovieTitle"
+            app:layout_constraintTop_toBottomOf="@+id/duration" />
+
+        <TextView
+            android:id="@+id/plotSummaryTitle"
+            android:textColor="@color/movie_title"
+            android:fontFamily="@font/proxima_nova_500"
+            android:textSize="@dimen/details_plot_summary_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/plot_summary"
+            app:layout_constraintStart_toStartOf="@id/detailsMovieTitle"
+            app:layout_constraintTop_toBottomOf="@+id/genreRV" />
+
+        <TextView
+            android:id="@+id/plotSummary"
+            android:fontFamily="@font/proxima_nova_400"
+            android:textSize="@dimen/details_average_score"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:maxLines="5"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/detailsMovieTitle"
+            app:layout_constraintEnd_toEndOf="@id/favIcon"
+            app:layout_constraintTop_toBottomOf="@id/plotSummaryTitle" />
+        <!-- android:maxLines="@{Integer.MAX_VALUE}"  -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

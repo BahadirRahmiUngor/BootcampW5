@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="metascore_textsize">14sp</dimen>
+    <dimen name="details_average_score">16sp</dimen>
+    <dimen name="details_total_vote">12sp</dimen>
+    <dimen name="details_plot_summary_title">24sp</dimen>
+    <dimen name="details_movie_title">32sp</dimen>
+    <dimen name="details_genresize">16sp</dimen>
+</resources>
